@@ -1,0 +1,35 @@
+학습 환경 만들기
+
+앞으로 학습하게 될 내용은 아래와 같은 환경에서 진행됩니다.
+
+[필요한 소프트웨어]
+1. 파이썬 3.6 버전
+2. 장고 1.11.x 버전
+3. Selenium(셀레늄) 3 버전
+4. Firefox 웹 브라우저 최신버전
+5. Geckodriver 최신버전
+6. git 최신버전
+
+[가상환경 설정 및 소프트웨어 설치]
+MacBook-Pro:~ seokyungdong$ mkdir python-tdd-book
+MacBook-Pro:~ seokyungdong$ cd python-tdd-book
+MacBook-Pro:python-tdd-book seokyungdong$ python3 -m venv virtualenv
+MacBook-Pro:python-tdd-book seokyungdong$ ls
+virtualenv
+
+MacBook-Pro:python-tdd-book seokyungdong$ source virtualenv/bin/activate
+(virtualenv) MacBook-Pro:python-tdd-book seokyungdong$ python -V
+Python 3.6.3
+
+(virtualenv) MacBook-Pro:python-tdd-book seokyungdong$ pip install --upgrade pip
+(virtualenv) MacBook-Pro:python-tdd-book seokyungdong$ pip install "django<1.12" "selenium<4"
+
+Geckodriver 다운로드 및 압축해제후 위치이동
+다운로드 위치: https://github.com/mozilla/geckodriver/releases
+(virtualenv) MacBook-Pro:Downloads seokyungdong$ tar xvf geckodriver-v0.19.1-macos.tar
+(virtualenv) MacBook-Pro:Downloads seokyungdong$ mv geckodriver /usr/local/bin/
+(virtualenv) MacBook-Pro:Downloads seokyungdong$ geckodriver --version
+geckodriver 0.19.1
+
+파이어폭스 다운로드및 설치: https://www.mozilla.org/ko/firefox/
+git 간편 안내서: http://rogerdudler.github.io/git-guide/index.ko.html
