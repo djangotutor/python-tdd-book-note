@@ -23,12 +23,13 @@ Python 3.6.3
 
 (virtualenv) MacBook-Pro:python-tdd-book seokyungdong$ pip install --upgrade pip
 (virtualenv) MacBook-Pro:python-tdd-book seokyungdong$ pip install "django<1.12" "selenium<4"
+(virtualenv) MacBook-Pro:python-tdd-book seokyungdong$ deactivate 
 
 Geckodriver 다운로드 및 압축해제후 위치이동
 다운로드 위치: https://github.com/mozilla/geckodriver/releases
-(virtualenv) MacBook-Pro:Downloads seokyungdong$ tar xvf geckodriver-v0.19.1-macos.tar
-(virtualenv) MacBook-Pro:Downloads seokyungdong$ mv geckodriver /usr/local/bin/
-(virtualenv) MacBook-Pro:Downloads seokyungdong$ geckodriver --version
+MacBook-Pro:Downloads seokyungdong$ tar xvf geckodriver-v0.19.1-macos.tar
+MacBook-Pro:Downloads seokyungdong$ mv geckodriver /usr/local/bin/
+MacBook-Pro:Downloads seokyungdong$ geckodriver --version
 geckodriver 0.19.1
 
 파이어폭스 다운로드및 설치: https://www.mozilla.org/ko/firefox/
